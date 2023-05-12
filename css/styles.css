@@ -174,7 +174,8 @@ body {
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* == Buttons End == */
@@ -224,6 +225,8 @@ body {
 
 header {
   border-bottom: 1px solid var(--subtle-bgc-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* == Site navigation == */
@@ -311,7 +314,8 @@ OR
     url(../images/hero/hero-bg.jpg);
   max-width: 1440px;
   background-size: cover;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -333,6 +337,7 @@ OR
 .advantages-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -341,6 +346,11 @@ OR
 }
 
 .advantages-list-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 112px;
   margin-bottom: 8px;
   padding: 24px 100px;
   background: var(--light-mode-color);
@@ -402,7 +412,8 @@ OR
 }
 
 .team-card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
+  /* padding: 32px 16px; */
 }
 
 .team-list-name {
@@ -416,7 +427,8 @@ OR
 
 .social-list {
   display: flex;
-  column-gap: 24px;
+  /* column-gap: 24px; */
+  gap: 24px;
   justify-content: center;
 }
 
@@ -450,9 +462,14 @@ OR
 
 /* == Customers == */
 
+.customers .section-title {
+  line-height: 1.1;
+}
+
 .customers-list {
   display: flex;
-  column-gap: 24px;
+  /* column-gap: 24px; */
+  gap: 24px;
   justify-content: center;
   align-items: center;
   /* align-items:flex-start; */
@@ -494,7 +511,7 @@ OR
   background-color: var(--primary-dark-color);
 }
 
-.footer .container {
+.footer > .container {
   display: flex;
   gap: 120px;
   align-items: baseline;
@@ -518,8 +535,10 @@ OR
   font-weight: 500;
 }
 
-.company-social-media .social-list {
-  column-gap: 16px;
+.company-social-media > .social-list {
+  display: flex;
+  /* column-gap: 16px; */
+  gap: 16px;
   justify-content: center;
 }
 
@@ -563,7 +582,12 @@ OR
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.portfolio-list-item:hover {
+.portfolio-list-link {
+  display: block;
+}
+
+.portfolio-list-link:hover,
+.portfolio-list-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
