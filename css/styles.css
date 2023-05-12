@@ -513,13 +513,13 @@ OR
 
 .container-footer {
   display: flex;
-  gap: 120px;
+  /* gap: 120px; */
   align-items: baseline;
 }
 
-/* .footer-card {
+.footer-card {
   margin-right: 120px;
-} */
+}
 
 .footer-description {
   display: flex;
