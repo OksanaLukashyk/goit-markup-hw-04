@@ -436,13 +436,13 @@ OR
 .social-list-item {
   height: 40px;
   width: 40px;
+  /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: calc((100% - 24px) / 4);
   height: 100%;
   width: 100%;
   background-color: var(--light-accent-color);
@@ -478,13 +478,13 @@ OR
 .customers-list-item {
   width: 168px;
   height: 88px;
+  /* flex-basis: calc((100% - 120px) / 6); */
 }
 
 .customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: calc((100% - 24px) / 6);
   height: 100%;
   width: 100%;
   border: 1px solid var(--customers-logo-light-color);
@@ -547,9 +547,9 @@ OR
   justify-content: center;
 }
 
-.company-social-media .social-list-link {
-  flex-basis: calc((100% - 16px) / 4);
-}
+/* .company-social-media .social-list-item {
+  flex-basis: calc((100% - 48px) / 4);
+} */
 
 .company-social-media .social-list-link:hover,
 .company-social-media .social-list-link:focus {
