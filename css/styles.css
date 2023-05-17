@@ -385,8 +385,8 @@ OR
 }
 
 .capabilities-list-item {
-  width: calc((100% - 48px) / 3);
-  /* flex-basis: calc((100% - 48px) / 3); */
+  /* width: calc((100% - 48px) / 3); */
+  flex-basis: calc((100% - 48px) / 3);
   border: 1px solid var(--subtle-bgc-color);
 }
 
@@ -431,6 +431,7 @@ OR
   /* column-gap: 24px; */
   gap: 24px;
   justify-content: center;
+  align-items: center;
 }
 
 .social-list-item {
@@ -545,6 +546,7 @@ OR
   /* column-gap: 16px; */
   gap: 16px;
   justify-content: center;
+  align-items: center;
 }
 
 /* .company-social-media .social-list-item {
